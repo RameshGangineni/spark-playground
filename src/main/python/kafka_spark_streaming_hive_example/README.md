@@ -1,8 +1,12 @@
 ## Kafka + Spark + Hadoop + Hive
-#####  In this example we will use Kafka to pull tweets from twitter and using Spark will store those tweets in Hive table
+#####  In this example we will use Kafka to pull tweets from twitter and using Spark store those tweets in Hive table
+
+##### Spark Version: 2.4.3
+##### Kafka Version: 2.2.0
+##### Python Version: 3.7.4
 
 ### Install Kafka
-Download Kafka from official website https://kafka.apache.org/downloads and run the following steps to run zookeeper and broker and download kafka-python dependency
+Download Kafka from official [website](https://kafka.apache.org/downloads) and run the following steps to run zookeeper and broker and download kafka-python dependency
 ~~~~
 1) Unzip the downloaded tgz file 
 2) tar -xvf kafka_2.11-2.2.0.tgz
@@ -16,14 +20,16 @@ Download Kafka from official website https://kafka.apache.org/downloads and run 
 10) pip3 install kakfa-python
 11) pip3 install tweepy
 ~~~~
+
 #### Install Hadoop
-Download Hadoop from official website https://archive.apache.org/dist/hadoop/common/
+Download Hadoop from official [website](https://archive.apache.org/dist/hadoop/common/)
 ~~~~
-Follow steps here https://www.guru99.com/how-to-install-hadoop.html for setup
+Follow steps here https://www.guru99.com/how-to-install-hadoop.html to setup Hadoop on single node 
 Start all the services by running sbin/start-all.sh or start-dfs.sh
 ~~~~
+
 ### Install Hive
-Download Hive from official website https://archive.apache.org/dist/hive/ and run the following commands to setup
+Download Hive from official [website](https://archive.apache.org/dist/hive/) and run the following commands to setup
 ~~~~
 1) Unzip the downloaded tgz file
 2) tar -xvf apache-hive-2.3.5-bin.tar.gz
@@ -86,8 +92,9 @@ Download Hive from official website https://archive.apache.org/dist/hive/ and ru
 14) select count(*) from tweets; -- 0 
 
 ~~~~
+
 ### Install Spark
-Download Spark from official website https://archive.apache.org/dist/spark/ and run the following commands to setup
+Download Spark from official [website](https://archive.apache.org/dist/spark/) and run the following commands to setup
 ~~~~
 1) unzip the downloaded tgz file i.e. tar -xvf spark-2.4.3-bin-hadoop2.7.tgz
 2) mv mv spark-2.4.3-bin-hadoop2.7/* /opt/spark/2.4.3/
@@ -108,3 +115,4 @@ Download Spark from official website https://archive.apache.org/dist/spark/ and 
 6) Place the twitter key in twitter_stream.py file and start tha(producer) i.e. python3 twitter_stream.py
 7) Submit transformer.py spark application i.e. spark-submit --jars spark-streaming-kafka-0-8-assembly_2.11-2.4.3.jar transformer.py
 8) select count(*) from tweets;
+~~~~
