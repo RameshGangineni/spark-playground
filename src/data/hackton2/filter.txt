@@ -1,0 +1,3 @@
+BNG:school
+HYD:school,restaurant
+BNG:school | HYD:school,restaurant

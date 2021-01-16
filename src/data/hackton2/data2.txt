@@ -1,0 +1,7 @@
+#,CTY,Types,isOpen,seats
+7,BNG,hospital,true,700
+8,HYD,hospital,true,300
+9,MUM,hospital,true,1000
+10,BNG,school,false,200
+11,HYD,restaurant,true,50
+12,MUM,hospital,true,900

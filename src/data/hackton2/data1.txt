@@ -1,0 +1,7 @@
+#,CTY,Types,isOpen,seats
+1,BNG,school,true,100
+2,HYD,school,true,150
+3,MUM,school,true,200
+4,BNG,restaurant,false,1000
+5,HYD,restaurant,true,1500
+6,MUM,restaurant,false,500

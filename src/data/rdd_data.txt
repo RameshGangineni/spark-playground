@@ -1,0 +1,6 @@
+s_id,name,addr,deptid,pocket_money
+1,jdsfgh,kjdf,21,100
+2,dsfjh,sdkjjfb,21,170
+3,ssbf,KFDB,21,130
+4,KDSFB,DKFJ,22,240
+5,SJFHDJH,nfdj,22,79
