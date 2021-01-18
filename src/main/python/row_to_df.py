@@ -7,7 +7,7 @@ if __name__ == '__main__':
     # Create Spark Session and Spark Context
     spark = SparkSession.\
         builder.\
-        appName('skip_first_n_rows'). \
+        appName('rows_to_df_demo'). \
         enableHiveSupport(). \
         getOrCreate()
     sc = spark.sparkContext

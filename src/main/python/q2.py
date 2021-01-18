@@ -1,6 +1,27 @@
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import udf
 from pyspark.sql.types import StringType
+
+'''
+when s in name then update address to null and update name to name_checked
+
+Input:
+s_id,name,addr,deptid,pocket_money
+1,jdsfgh,kjdf,21,100
+2,dsfjh,sdkjjfb,21,170
+3,ssbf,KFDB,21,130
+4,KDSFB,DKFJ,22,240
+5,SJFHDJH,nfdj,22,79
+
+Output:
+[
+['1', 'jdsfgh', 'kjdf', '21', '100'], 
+['2', 'dsfjh', 'sdkjjfb', '21', '170'], 
+['3', 'ssbf-checked', None, '21', '130'], 
+['4', 'KDSFB', 'DKFJ', '22', '240'], 
+['5', 'SJFHDJH-checked', None, '22', '79']
+]
+
+'''
 
 
 def cus_udf(row):

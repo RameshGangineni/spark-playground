@@ -16,7 +16,7 @@ if __name__ == '__main__':
     # Create Spark Session and Spark Context
     spark = SparkSession.\
         builder.\
-        appName('RDD_Transformations_Actions'). \
+        appName('group_by_key_demo'). \
         enableHiveSupport(). \
         getOrCreate()
     sc = spark.sparkContext

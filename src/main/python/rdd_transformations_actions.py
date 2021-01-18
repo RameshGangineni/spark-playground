@@ -3,17 +3,17 @@ from common.pretty_print import *
 
 
 def process_partition_sum(iterator):
-    sum = 0
-    for element in iterator:
-        sum = sum + element
-    yield sum
+    sum1 = 0
+    for element1 in iterator:
+        sum1 = sum1 + element1
+    yield sum1
 
 
 def process_partition_sum_with_index(index, partition):
-    sum = 0
-    for element in partition:
-        sum = sum + element
-    yield index, sum
+    sum1 = 0
+    for element1 in partition:
+        sum1 = sum1 + element1
+    yield index, sum1
 
 
 def filter_out_2_from_partition(list_of_lists):
@@ -158,7 +158,9 @@ if __name__ == '__main__':
     ''' Spark RDD groupBy function returns an RDD of grouped items '''
     emp_data_rdd = sc.textFile('file:///home/rameshbabug/Documents/projects/internal/spark-playground/src/data/emp_data.csv')
     emp_data_rdd = emp_data_rdd.filter(lambda x: 'NAME' not in x)
+    print("EMP RDD: {}".format(emp_data_rdd.collect()))
     city_rdd = emp_data_rdd.map(lambda x: x.split(",")[3])
+    print_info("CITY RDD: {}".format(city_rdd.collect()))
     city_group = city_rdd.groupBy(lambda city: city[0])
     for element in city_group.collect():
         print(element[0], [i for i in element[1]], sep='')

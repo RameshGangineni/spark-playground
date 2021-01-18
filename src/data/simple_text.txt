@@ -8,4 +8,6 @@
 2012-02-03 18:35:34 SampleClass8 [DEBUG] detail for id 2074121310
 2012-02-03 18:35:34 SampleClass0 [TRACE] verbose detail for id 1505582508
 2012-02-03 18:35:34 SampleClass0 [TRACE] verbose detail for id 1903854437
-2012-02-03 18:35:34 SampleClass7 [DEBUG] detail for id 915853141
+2012-02-03 18:35:34 SampleClass7 [DEBUG] This is test case1 and biggest line in the file
+2012-02-03 18:35:34 SampleClass7 [DEBUG] This is not test case1
+2012-02-03 18:35:34 SampleClass7 [DEBUG] This is test case2
