@@ -11,7 +11,7 @@ if __name__ == '__main__':
         appName('RDD_Transformations_Actions'). \
         enableHiveSupport(). \
         getOrCreate()
-    sc = spark.sparkContext 
+    sc = spark.sparkContext
 
     # --------------------------------------------------------------------------------------------
 
