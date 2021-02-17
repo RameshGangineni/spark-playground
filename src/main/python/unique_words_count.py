@@ -8,7 +8,7 @@ if __name__ == '__main__':
     # Create Spark Session and Spark Context
     spark = SparkSession.\
         builder.\
-        appName('wc'). \
+        appName('unique_words_count'). \
         enableHiveSupport(). \
         getOrCreate()
     sc = spark.sparkContext
