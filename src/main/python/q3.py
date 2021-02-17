@@ -5,8 +5,7 @@ from pyspark.sql.functions import *
 from pyspark.sql.types import IntegerType, StringType, DateType
 import datetime
 from datetime import date
-import pandas as pd
-import math
+
 
 
 def top_three(row):
@@ -124,6 +123,6 @@ spark-submit \
 --conf spark.default.parallelism=60 \
 --conf spark.driver.memoryOverhead=2G \
 --conf spark.driver.maxResultSize=1G \
---conf spark.sql.shuffle.partitions=50 assignment1.py \
+--conf spark.sql.shuffle.partitions=50 q3.py \
 --spark_master=yarn
 '''
