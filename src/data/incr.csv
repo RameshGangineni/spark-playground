@@ -1,0 +1,7 @@
+id,name,sal,address,modified_date,flag
+2,DEF,4500,Bang,2017-05-15,U
+3,GHI,3000,Hyd,2019-03-18,U
+4,JKL,4500,Chn,2019-01-03,D
+10,ABC1,5300,Hyd,2020-01-05,D
+8,XYZ,4800,Chn,2020-10-21,I
+9,PQR,5000,Bang,2020-12-29,I
